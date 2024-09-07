@@ -18,6 +18,18 @@ body {
   min-height: 100svh;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  /* Balance out the length of headings */
+  text-wrap: balance;
+}
+
+p {
+  /* Set the maximum number of characters in a paragraph */
+  max-width: 75ch;
+  /* Balance text that has a large number of characters on the page. Not currently supported in Firefox */
+  text-wrap: pretty;
+}
+
 main, picture, svg, video {
   /* Set the elements to be block-level elements by default */
   display: block;
