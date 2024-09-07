@@ -14,6 +14,10 @@ body {
   font-size: 1rem;
 }
 
+main {
+  display: block;
+}
+
 img {
   /* Replace the default inline-block behavior to be full-width and to stack when needed */
   vertical-align: middle;
