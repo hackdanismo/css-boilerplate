@@ -13,3 +13,10 @@ body {
   /* The root font-size will use the rem unit with a px unit as a fallback if needed */
   font-size: 1rem;
 }
+
+img {
+  /* Replace the default inline-block behavior to be full-width and to stack when needed */
+  display: block;
+  /* Restrict the image width to not exceed the parent container to keep aspect ratio but allow imaeg to scale-down */
+  max-width: 100%;
+}
