@@ -16,7 +16,16 @@ body {
 
 img {
   /* Replace the default inline-block behavior to be full-width and to stack when needed */
-  display: block;
+  vertical-align: middle;
   /* Restrict the image width to not exceed the parent container to keep aspect ratio but allow imaeg to scale-down */
   max-width: 100%;
+  /* Retain the aspect ratio of the image that is usually set with the HTML width and height attributes */
+  height: auto;
+  /* Set the tooltip text style to make it easier to identify in text if the image does not load */
+  font-style: italic;
+  /* Handle loading low resolution images for lazy-loading */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Create margin around a floated image with content */
+  shape-margin: 1rem;
 }
