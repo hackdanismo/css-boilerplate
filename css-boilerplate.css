@@ -6,3 +6,10 @@
   /* Remove padding from all elements by default */
   padding: 0;
 }
+
+body {
+  /* Set the root font-size */
+  font-size: 16px;
+  /* The root font-size will use the rem unit with a px unit as a fallback if needed */
+  font-size: 1rem;
+}
