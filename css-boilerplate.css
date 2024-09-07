@@ -1,0 +1,8 @@
+*, *::before, *::after {
+  /* Ensure all elements apply the correct box-sizing model */
+  box-sizing: border-box;
+  /* Remove margin from all elements by default */
+  margin: 0;
+  /* Remove padding from all elements by default */
+  padding: 0;
+}
