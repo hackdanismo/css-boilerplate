@@ -28,6 +28,8 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  /* Create a smooth scroll behaviour, rather than a jumping effect to the new position */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -70,11 +72,19 @@ img, picture, svg, video {
   max-width: 100%;
 }
 
+img, iframe, object {
+  /* 
+  * Retain the aspect ratio of the element that is usually set with the HTML width and height attributes.
+  * Prevents the iFrame or object from becoming stretched or distorted. 
+  */
+  height: auto;
+  /* Remove any border from elements in legacy IE browsers when elements are used inside of links */
+  border: none;
+}
+
 img {
   /* Replace the default inline-block behavior to be full-width and to stack when needed */
   vertical-align: middle;
-  /* Retain the aspect ratio of the image that is usually set with the HTML width and height attributes */
-  height: auto;
   /* Set the tooltip text style to make it easier to identify in text if the image does not load */
   font-style: italic;
   /* Handle loading low resolution images for lazy-loading */
