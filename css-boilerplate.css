@@ -94,6 +94,11 @@ img {
   shape-margin: 1rem;
 }
 
+button, input, textarea, optgroup, select, a {
+  /* Ensure that the font applied is inherited and also applies to the elements listed as selectors */
+  font: inherit;
+}
+
 button {
   /* Ensure the text within a button wraps correctly on small devices */
   min-width: fit-content;
