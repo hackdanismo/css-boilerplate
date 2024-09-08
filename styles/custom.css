@@ -31,3 +31,43 @@ h1, h2, h3, h4, h5, h6 {
   /* Apply the Bold Webfont with fallback system fonts should the Webfont not load */
   font-family: "Darker Grotesque Bold", Arial, Helvetica, sans-serif;
 }
+
+
+/* The container is used to act as a wrapper to contain the page content and avoid content being full-width */
+.container {
+  /* 
+  * Set the maximum size of the container to be 1200px.
+  * Calculate the min-width of the container to be 100% of the parent minus 15px.
+  * The 15px value is the spacing on the left/right of the container.
+  */
+  width: min(100% - 15px, 1200px);
+  /* Center the element within the parent container */
+  margin-inline: auto;
+}
+
+/* Apply default styling to the HTML section element */
+section {
+  /* 
+  * Set the vertical spacing using margin between section elements on the page.
+  * The spacing between sections grows or shrinks based on the viewport width.
+  * This will never be smaller than 1rem or larger than 1.5rem.
+  * The 2vw value is the dynamic margin, which will adjust based on 2% of the viewport width.
+  * The 0 value at the end removes any left or right margin helping to align the sections to the edges of the container.
+  */
+  margin: clamp(1rem, 2vw, 1.5rem) 0;
+}
+
+h1 {
+  /* Set the minimum and maximum font-size for H1 headings without the use of media queries */
+  font-size: clamp(2rem, 8vw, 6rem);
+}
+
+h2 {
+  /* Set the minimum and maximum font-size for H2 headings without the use of media queries */
+  font-size: clamp(1.5rem, 8vw, 3rem);
+}
+
+p {
+  /* Set the minimum and maximum font-size for paragraphs without the use of media queries */
+  font-size: clamp(0.5rem, 3vw, 1.25rem);
+}

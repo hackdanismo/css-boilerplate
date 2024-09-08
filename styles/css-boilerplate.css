@@ -59,11 +59,11 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   /* Set the maximum number of characters in a paragraph */
-  max-width: 75ch;
+  /*max-width: 75ch;*/
   /* Balance text that has a large number of characters on the page. Not currently supported in Firefox */
-  text-wrap: pretty;
+  /*text-wrap: pretty;*/
   /* Ensure the text wraps correctly and acts as a fallback for browsers not supporting the text-wrap property added */
-  overflow-wrap: break-word;
+  /*overflow-wrap: break-word;*/
 }
 
 main, picture, svg, video {
