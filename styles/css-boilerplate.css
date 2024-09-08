@@ -104,11 +104,22 @@ img {
   shape-margin: 1rem;
 } 
 
-a {
+/* Link default state */
+a, a:link {
   /* Remove the default grey background on active links in IE browsers */
   background-color: transparent;
   /* Inherit the colour specified in the parent element for consistency until a colour is applied */
   color: inherit;
+  /* Inherit the font-size from the parent element */
+  font-size: inherit;
+  /* Remove underline from all links by default */
+  text-decoration: none;
+}
+
+/* Link hover state */
+a:hover {
+  /* Display underline underneath a link on hover by default */
+  text-decoration: underline;
 }
 
 button, .button, input, textarea, optgroup, select, a {
