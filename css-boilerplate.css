@@ -1,6 +1,6 @@
 /* 
   * CSS Boilerplate
-  * v0.1.9
+  * v0.1.0
   *
   * License: GPL-3.0 license
   * Copyright: Hackdanismo (Dan Jackson) and any other contributors
@@ -17,6 +17,17 @@
   padding: 0;
   /* Inherit any font that has been set */
   font: inherit;
+}
+
+html {
+  /*
+  * Prevent font-size inflation when the user changes the zoom level or device settings.
+  * Disable the automatic font-size adjustment to ensure font-size remains as specified by the CSS.
+  * Helps to maintain the font-size on older mobile browsers and retain consistency with the design.
+  */
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 body {
