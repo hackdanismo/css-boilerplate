@@ -53,3 +53,8 @@ img {
   /* Create margin around a floated image with content */
   shape-margin: 1rem;
 }
+
+button {
+  /* Ensure the text within a button wraps correctly on small devices */
+  min-width: fit-content;
+}
