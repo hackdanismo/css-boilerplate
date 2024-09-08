@@ -92,6 +92,11 @@ img {
   background-size: cover;
   /* Create margin around a floated image with content */
   shape-margin: 1rem;
+} 
+
+a {
+  /* Remove the default grey background on active links in IE browsers */
+  background-color: transparent;
 }
 
 button, input, textarea, optgroup, select, a {
