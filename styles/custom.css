@@ -32,6 +32,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Darker Grotesque Bold", Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  /* Set the minimum and maximum font-size for H1 headings without the use of media queries */
+  font-size: clamp(2rem, 8vw, 6rem);
+}
+
+h2 {
+  /* Set the minimum and maximum font-size for H2 headings without the use of media queries */
+  font-size: clamp(1.5rem, 8vw, 3rem);
+}
 
 /* The container is used to act as a wrapper to contain the page content and avoid content being full-width */
 .container {
@@ -55,16 +64,6 @@ section {
   * The 0 value at the end removes any left or right margin helping to align the sections to the edges of the container.
   */
   margin: clamp(1rem, 2vw, 1.5rem) 0;
-}
-
-h1 {
-  /* Set the minimum and maximum font-size for H1 headings without the use of media queries */
-  font-size: clamp(2rem, 8vw, 6rem);
-}
-
-h2 {
-  /* Set the minimum and maximum font-size for H2 headings without the use of media queries */
-  font-size: clamp(1.5rem, 8vw, 3rem);
 }
 
 p {
