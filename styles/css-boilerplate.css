@@ -37,12 +37,18 @@ body {
   font-size: 16px;
   /* The root font-size will use the rem unit with a px unit as a fallback if needed */
   font-size: 1rem;
+  /* Flexbox is used to also help push the page footer to the bottom of the page */
+  display: flex;
+  /* Set the direction of the flex to be a column so it does not default to the row direction */
+  flex-direction: column;
   /* 
   * Improve readability of text by providing spacing to reduce eye strain.
   * Helps to improve accessibility making the text easier to scan especially on small screens and mobile devices.
   */
   line-height: 1.5;
-  /* Ensure the body will fill the visible part of the screen. Not currently supported in Firefox */
+  /* Apply a minimum height to help push the page footer to the bottom of the page. This is a fallback for svh units */
+  min-height: 100vh;
+  /* Ensure the body will fill the visible part of the screen. Not currently supported in Firefox, added for Progressive Enhancement */
   min-height: 100svh;
   /* Prevent horizontal scrolling issues on mobile devices */
   overflow-x: hidden;
@@ -140,6 +146,11 @@ pre, code, kbd, samp {
 ul, ol {
   /* Create a clean unstyled starting point to allow customisation for lists */
   list-style-type: none;
+}
+
+footer {
+  /* Push the footer to the bottom of the page with the flex properties in the body element */
+  margin-top: auto;
 }
 
 /* Apply styling for React or Next.js applications */

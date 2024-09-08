@@ -25,12 +25,6 @@ body {
   font-size: 20px;
   /* Default to the rem unit but use the px fallback if needed */
   font-size: 1.25rem;
-  /* Apply a minimum height to help push the page footer to the bottom of the page */
-  min-height: 100svh;
-  /* Flexbox is used to also help push the page footer to the bottom of the page */
-  display: flex;
-  /* Set the direction of the flex to be a column so it does not default to the row direction */
-  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -89,9 +83,4 @@ p {
     /* Use the gap property to apply spacing between each navigation item */
     gap: 1rem;
   }
-}
-
-footer {
-  /* Push the footer to the bottom of the page with the flex properties in the body element */
-  margin-top: auto;
 }
