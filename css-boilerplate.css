@@ -14,6 +14,11 @@ body {
   font-size: 16px;
   /* The root font-size will use the rem unit with a px unit as a fallback if needed */
   font-size: 1rem;
+  /* 
+  * Improve readability of text by providing spacing to reduce eye strain.
+  * Helps to improve accessibility making the text easier to scan especially on small screens and mobile devices.
+  */
+  line-height: 1.5;
   /* Ensure the body will fill the visible part of the screen. Not currently supported in Firefox */
   min-height: 100svh;
   /* Improve the readability of fonts in WebKit browsers to render the edges of the characters to look smooth on screen */
