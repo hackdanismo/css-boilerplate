@@ -71,3 +71,16 @@ p {
   /* Set the minimum and maximum font-size for paragraphs without the use of media queries */
   font-size: clamp(0.5rem, 3vw, 1.25rem);
 }
+
+/* Apply styling to the navigation bar on the page */
+.navigation {
+  /* Apply styling to the unordered list in the navigation element using native CSS nesting */
+  & ul {
+    /* Display links within the navigation to be horizontal */
+    display: flex;
+    /* Align the links to be on the right side of the page on desktop */
+    justify-content: flex-end;
+    /* Use the gap property to apply spacing between each navigation item */
+    gap: 1rem;
+  }
+}

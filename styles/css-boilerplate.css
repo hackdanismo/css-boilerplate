@@ -137,6 +137,11 @@ pre, code, kbd, samp {
   font-size: inherit;
 }
 
+ul, ol {
+  /* Create a clean unstyled starting point to allow customisation for lists */
+  list-style-type: none;
+}
+
 /* Apply styling for React or Next.js applications */
 #root, #__next {
   /* 
