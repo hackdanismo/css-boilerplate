@@ -16,6 +16,10 @@ body {
   font-size: 1rem;
   /* Ensure the body will fill the visible part of the screen. Not currently supported in Firefox */
   min-height: 100svh;
+  /* Improve the readability of fonts in WebKit browsers to render the edges of the characters to look smooth on screen */
+  -webkit-font-smoothing: antialiased;
+  /* Applies the same font readability to Firefox browsers on macOS */
+  -moz-osx-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
