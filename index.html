@@ -9,22 +9,19 @@
 
     <!-- Include the CSS Boilerplate stylesheet -->
     <link rel="stylesheet" href="styles/css-boilerplate.css">
+    <!-- Include the CSS Library stylesheet for reusable styles across projects -->
+    <link rel="stylesheet" href="styles/css-library.css">
     <!-- Include custom CSS specifically for the landing page -->
     <link rel="stylesheet" href="styles/custom.css">
+
+    <!-- Preload the webfont to fetch the resource early and reduce unstyled flash of text (FOUT) -->
+    <link rel="preload" href="fonts/darker-grotesque-v8-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 <body>
 <main role="main">
     <div class="container">
         <section>
             <h1>Hello, World</h1>
-
-            <!-- Download buttons for the CSS Boilerplate -->
-            <div class="download-buttons-container">
-                <!-- Download for the minified version (recommended) -->
-                <a role="button" href="styles/css-boilerplate.css" class="button" download>Minified CSS Boilerplate (recommended)</a>
-                <!-- Download for the unminified version-->
-                <a role="button" href="styles/css-boilerplate.css" class="button" download>Unminified CSS Boilerplate</a>
-            </div>
         </section>
     </div>
 </main>

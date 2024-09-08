@@ -1,0 +1,11 @@
+/* The container is used to act as a wrapper to contain the page content and avoid content being full-width */
+.container {
+    /* 
+    * Set the maximum size of the container to be 1200px.
+    * Calculate the min-width of the container to be 100% of the parent minus 15px.
+    * The 15px value is the spacing on the left/right of the container.
+    */
+    width: min(100% - 15px, 1200px);
+    /* Center the element within the parent container */
+    margin-inline: auto;
+  }

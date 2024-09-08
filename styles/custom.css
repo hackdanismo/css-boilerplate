@@ -1,28 +1,18 @@
-/* The container is used to contain the page content to avoid being full-width */
-.container {
-  /* 
-  * Set the maximum size of the container to be 1200px.
-  * Calculate the min-width of the container to be 100% of the parent minus 15px.
-  * The 15px value is the spacing on the left/right of the container.
-  */
-  width: min(100% - 15px, 1200px);
-  /* Center the element within the parent container */
-  margin-inline: auto;
+/* Darker Grotesque Regular - Webfont - as WOFF2 file format */
+@font-face {
+  font-display: swap;
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  /* Supported in the following browser versions: Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/darker-grotesque-v8-latin-regular.woff2') format('woff2');
 }
 
-.button {
-  border: 1px solid black;
-  padding: 1rem;
-}
-
-.download-buttons-container {
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.download-buttons-container .button {
-  /* The buttons in the container become equal-width */
-  flex: 1;
+body {
+  /* Apply the regular Webfont with fallback system fonts should the Webfont not load */
+  font-family: "Darker Grotesque", Arial, Helvetica, sans-serif;
+  /* Override the default font-size in the boilerplate reset to make the text larger and easier to read */
+  font-size: 20px;
+  /* Default to the rem unit but use the px fallback if needed */
+  font-size: 1.25rem;
 }
