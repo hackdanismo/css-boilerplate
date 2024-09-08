@@ -99,9 +99,21 @@ button, input, textarea, optgroup, select, a {
   font: inherit;
 }
 
-button {
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  /*
+  * Allows the element to behave like inline elements, to flow with text, we can also set width, height and padding.
+  * Helps to ensure consistency across browsers and when links are styled as buttons.
+  */
+  display: inline-block;
   /* Ensure the text within a button wraps correctly on small devices */
   min-width: fit-content;
+  /* Cross-browser compatibility for WebKit browsers such as Safari and iOS */
+  -webkit-appearance: button;
+  /* Force the element to render as a standard button and override any platform-specific styles */
+  appearance: button;
 }
 
 /* Apply styling to code snippets and similar elements */
