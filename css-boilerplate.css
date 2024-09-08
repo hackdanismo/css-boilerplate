@@ -1,3 +1,13 @@
+/* 
+  * CSS Boilerplate
+  * v0.1.9
+  *
+  * License: GPL-3.0 license
+  * Copyright: Hackdanismo (Dan Jackson) and any other contributors
+  *
+  * Date: 2024-09-08
+*/
+
 *, *::before, *::after {
   /* Ensure all elements apply the correct box-sizing model */
   box-sizing: border-box;
