@@ -99,6 +99,13 @@ button {
   min-width: fit-content;
 }
 
+/* Apply styling to code snippets and similar elements */
+pre, code, kbd, samp {
+  font-family: monospace;
+  /* Inherit the font-size from the parent element */
+  font-size: inherit;
+}
+
 /* Apply styling for React or Next.js applications */
 #root, #__next {
   /* 
