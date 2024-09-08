@@ -62,3 +62,13 @@ button {
   /* Ensure the text within a button wraps correctly on small devices */
   min-width: fit-content;
 }
+
+/* Apply styling for React or Next.js applications */
+#root, #__next {
+  /* 
+  * Ensures all content inside the app is rendered with its own stacking context.
+  * This controls how child elements are layered in terms of z-index and paint order.
+  * Prevents z-index conflicts or visual overlaps between elements inside of the isolate element specified.
+  */
+  isolation: isolate;
+}
