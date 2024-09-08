@@ -21,3 +21,13 @@ section {
   */
   margin: clamp(1rem, 2vw, 1.5rem) 0;
 }
+
+h1 {
+  /* Set the minimum and maximum font-size for H1 headings without the use of media queries */
+  font-size: clamp(2rem, 8vw, 6rem);
+}
+
+h2 {
+  /* Set the minimum and maximum font-size for H2 headings without the use of media queries */
+  font-size: clamp(1.5rem, 8vw, 3rem);
+}

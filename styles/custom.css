@@ -5,14 +5,29 @@
   font-style: normal;
   font-weight: 400;
   /* Supported in the following browser versions: Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  src: url('../fonts/darker-grotesque-v8-latin-regular.woff2') format('woff2');
+  src: url("../fonts/darker-grotesque-v8-latin-regular.woff2") format("woff2");
+}
+
+/* Darker Grotesque Bold - Webfont - as WOFF2 file format */
+@font-face {
+  font-display: swap;
+  font-family: "Darker Grotesque Bold";
+  font-style: normal;
+  font-weight: 700;
+  /* Supported in the following browser versions: Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/darker-grotesque-v8-latin-700.woff2") format("woff2");
 }
 
 body {
-  /* Apply the regular Webfont with fallback system fonts should the Webfont not load */
+  /* Apply the Regular Webfont with fallback system fonts should the Webfont not load */
   font-family: "Darker Grotesque", Arial, Helvetica, sans-serif;
   /* Override the default font-size in the boilerplate reset to make the text larger and easier to read */
   font-size: 20px;
   /* Default to the rem unit but use the px fallback if needed */
   font-size: 1.25rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* Apply the Bold Webfont with fallback system fonts should the Webfont not load */
+  font-family: "Darker Grotesque Bold", Arial, Helvetica, sans-serif;
 }
