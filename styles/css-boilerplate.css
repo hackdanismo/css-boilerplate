@@ -105,12 +105,13 @@ a {
   color: inherit;
 }
 
-button, input, textarea, optgroup, select, a {
+button, .button, input, textarea, optgroup, select, a {
   /* Ensure that the font applied is inherited and also applies to the elements listed as selectors */
   font: inherit;
 }
 
 button,
+.button,
 [type="button"],
 [type="submit"],
 [type="reset"] {
@@ -125,6 +126,8 @@ button,
   -webkit-appearance: button;
   /* Force the element to render as a standard button and override any platform-specific styles */
   appearance: button;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* Apply styling to code snippets and similar elements */

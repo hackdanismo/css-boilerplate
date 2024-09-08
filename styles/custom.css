@@ -1,0 +1,28 @@
+/* The container is used to contain the page content to avoid being full-width */
+.container {
+  /* 
+  * Set the maximum size of the container to be 1200px.
+  * Calculate the min-width of the container to be 100% of the parent minus 15px.
+  * The 15px value is the spacing on the left/right of the container.
+  */
+  width: min(100% - 15px, 1200px);
+  /* Center the element within the parent container */
+  margin-inline: auto;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.download-buttons-container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.download-buttons-container .button {
+  /* The buttons in the container become equal-width */
+  flex: 1;
+}

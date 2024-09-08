@@ -8,14 +8,24 @@
     <title>CSS Boilerplate</title>
 
     <!-- Include the CSS Boilerplate stylesheet -->
-    <link rel="stylesheet" href="css-boilerplate.css">
+    <link rel="stylesheet" href="styles/css-boilerplate.css">
+    <!-- Include custom CSS specifically for the landing page -->
+    <link rel="stylesheet" href="styles/custom.css">
 </head>
 <body>
 <main role="main">
-    <h1>Hello, World</h1>
+    <div class="container">
+        <section>
+            <h1>Hello, World</h1>
 
-    <div style="max-width: 1200px">
-        <img src="images/david-villasana.jpg" width="200" height="150" alt="Coffee cup placed on top of a table.">
+            <!-- Download buttons for the CSS Boilerplate -->
+            <div class="download-buttons-container">
+                <!-- Download for the minified version (recommended) -->
+                <a role="button" href="styles/css-boilerplate.css" class="button" download>Minified CSS Boilerplate (recommended)</a>
+                <!-- Download for the unminified version-->
+                <a role="button" href="styles/css-boilerplate.css" class="button" download>Unminified CSS Boilerplate</a>
+            </div>
+        </section>
     </div>
 </main>
 </body>
