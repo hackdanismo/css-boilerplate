@@ -1,6 +1,6 @@
 /* 
   * CSS Boilerplate
-  * v0.1.0
+  * v1.0.0
   *
   * License: GPL-3.0 license
   * Copyright: Hackdanismo (Dan Jackson) and any other contributors
@@ -44,6 +44,8 @@ body {
   line-height: 1.5;
   /* Ensure the body will fill the visible part of the screen. Not currently supported in Firefox */
   min-height: 100svh;
+  /* Prevent horizontal scrolling issues on mobile devices */
+  overflow-x: hidden;
   /* Improve the readability of fonts in WebKit browsers to render the edges of the characters to look smooth on screen */
   -webkit-font-smoothing: antialiased;
   /* Applies the same font readability to Firefox browsers on macOS */
@@ -60,6 +62,8 @@ p {
   max-width: 75ch;
   /* Balance text that has a large number of characters on the page. Not currently supported in Firefox */
   text-wrap: pretty;
+  /* Ensure the text wraps correctly and acts as a fallback for browsers not supporting the text-wrap property added */
+  overflow-wrap: break-word;
 }
 
 main, picture, svg, video {
@@ -72,7 +76,7 @@ img, picture, svg, video {
   max-width: 100%;
 }
 
-img, iframe, object {
+img, iframe, object, svg {
   /* 
   * Retain the aspect ratio of the element that is usually set with the HTML width and height attributes.
   * Prevents the iFrame or object from becoming stretched or distorted. 
@@ -97,6 +101,8 @@ img {
 a {
   /* Remove the default grey background on active links in IE browsers */
   background-color: transparent;
+  /* Inherit the colour specified in the parent element for consistency until a colour is applied */
+  color: inherit;
 }
 
 button, input, textarea, optgroup, select, a {
