@@ -70,16 +70,6 @@ h6 {
   text-wrap: balance;
 }
 
-/* TODO: retain this for reference, but consider as a possible utility class elsewhere */
-/*p {*/
-  /* Set the maximum number of characters in a paragraph */
-  /*max-width: 75ch;*/
-  /* Balance text that has a large number of characters on the page. Not currently supported in Firefox */
-  /*text-wrap: pretty;*/
-  /* Ensure the text wraps correctly and acts as a fallback for browsers not supporting the text-wrap property added */
-  /*overflow-wrap: break-word;*/
-/*}*/
-
 main, 
 picture, 
 svg, 
