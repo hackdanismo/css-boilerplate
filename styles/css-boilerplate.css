@@ -5,10 +5,12 @@
   * License: GPL-3.0 license
   * Copyright: Hackdanismo (Dan Jackson) and any other contributors
   *
-  * Date: 2024-09-08
+  * Date: 2024-09-13
 */
 
-*, *::before, *::after {
+*, 
+*::before, 
+*::after {
   /* Ensure all elements apply the correct box-sizing model */
   box-sizing: border-box;
   /* Remove margin from all elements by default */
@@ -58,7 +60,12 @@ body {
   -moz-osx-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
   /* Balance out the length of headings */
   text-wrap: balance;
 }
@@ -73,17 +80,26 @@ h1, h2, h3, h4, h5, h6 {
   /*overflow-wrap: break-word;*/
 /*}*/
 
-main, picture, svg, video {
+main, 
+picture, 
+svg, 
+video {
   /* Set the elements to be block-level elements by default */
   display: block;
 }
 
-img, picture, svg, video {
+img, 
+picture, 
+svg, 
+video {
   /* Restrict the element width to not exceed the parent container to keep aspect ratio but allow the element to scale-down */
   max-width: 100%;
 }
 
-img, iframe, object, svg {
+img, 
+iframe, 
+object, 
+svg {
   /* 
   * Retain the aspect ratio of the element that is usually set with the HTML width and height attributes.
   * Prevents the iFrame or object from becoming stretched or distorted. 
@@ -106,7 +122,8 @@ img {
 } 
 
 /* Link default state */
-a, a:link {
+a, 
+a:link {
   /* Remove the default grey background on active links in IE browsers */
   background-color: transparent;
   /* Inherit the colour specified in the parent element for consistency until a colour is applied */
@@ -123,16 +140,25 @@ a:hover {
   text-decoration: underline;
 }
 
-button, .button, input, textarea, optgroup, select, a {
+button,
+[type="button"],
+[type="submit"],
+[type="reset"],
+[role="button"],
+input, 
+textarea, 
+optgroup, 
+select, 
+a {
   /* Ensure that the font applied is inherited and also applies to the elements listed as selectors */
   font: inherit;
 }
 
 button,
-.button,
 [type="button"],
 [type="submit"],
-[type="reset"] {
+[type="reset"],
+[role="button"] {
   /*
   * Allows the element to behave like inline elements, to flow with text, we can also set width, height and padding.
   * Helps to ensure consistency across browsers and when links are styled as buttons.
@@ -149,13 +175,17 @@ button,
 }
 
 /* Apply styling to code snippets and similar elements */
-pre, code, kbd, samp {
+pre, 
+code, 
+kbd, 
+samp {
   font-family: monospace;
   /* Inherit the font-size from the parent element */
   font-size: inherit;
 }
 
-ul, ol {
+ul, 
+ol {
   /* Create a clean unstyled starting point to allow customisation for lists */
   list-style-type: none;
 }
@@ -166,7 +196,8 @@ footer {
 }
 
 /* Apply styling for React or Next.js applications */
-#root, #__next {
+#root, 
+#__next {
   /* 
   * Ensures all content inside the app is rendered with its own stacking context.
   * This controls how child elements are layered in terms of z-index and paint order.
