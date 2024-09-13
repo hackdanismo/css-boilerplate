@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "An open-source CSS Reset and collection of useful CSS code.",
   "main": "index.js",
+  "engines": {
+    "node": ">=20.17.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
