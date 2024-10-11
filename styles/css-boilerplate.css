@@ -94,12 +94,22 @@
     text-wrap: balance;
   }
 
-  p, li, figcaption {
-    text-wrap: pretty;
+  h1, 
+  h2, 
+  h3, 
+  h4, 
+  button, 
+  input, 
+  label {
+    /* Set default line-height to aid readability */
+    line-height: 1.1;
   }
 
-  h1, h2, h3, h4, button, input, label {
-    line-height: 1.1;
+  p, 
+  li, 
+  figcaption {
+    /* Avoid orphan text on a new line with text-wrapping */
+    text-wrap: pretty;
   }
 
   main, 
