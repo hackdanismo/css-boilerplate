@@ -8,202 +8,205 @@
   * Date: 2024-09-13 (TBC)
 */
 
-*, 
-*::before, 
-*::after {
-  /* Ensure all elements apply the correct box-sizing model */
-  box-sizing: border-box;
-  /* Inherit any font that has been set */
-  font: inherit;
-}
+/* Namespace the code using @layer supported by all modern browsers, except Internet Explorer (IE) */
+@layer reset {
+  *, 
+  *::before, 
+  *::after {
+    /* Ensure all elements apply the correct box-sizing model */
+    box-sizing: border-box;
+    /* Inherit any font that has been set */
+    font: inherit;
+  }
 
-html {
-  /* Set the root font-size */
-  font-size: 16px;
-  /* The root font-size will use the rem unit with a px unit as a fallback if needed */
-  font-size: 1rem;
-  /* 
-  * Improve readability of text by providing spacing to reduce eye strain.
-  * Helps to improve accessibility making the text easier to scan especially on small screens and mobile devices.
-  */
-  line-height: 1.5;
-  /*
-  * Prevent font-size inflation when the user changes the zoom level or device settings.
-  * Disable the automatic font-size adjustment to ensure font-size remains as specified by the CSS.
-  * Helps to maintain the font-size on older mobile browsers and Safari to retain consistency with the design.
-  */
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-  /* Create a smooth scroll behaviour, rather than a jumping effect to the new position */
-  scroll-behavior: smooth;
-}
+  html {
+    /* Set the root font-size */
+    font-size: 16px;
+    /* The root font-size will use the rem unit with a px unit as a fallback if needed */
+    font-size: 1rem;
+    /* 
+    * Improve readability of text by providing spacing to reduce eye strain.
+    * Helps to improve accessibility making the text easier to scan especially on small screens and mobile devices.
+    */
+    line-height: 1.5;
+    /*
+    * Prevent font-size inflation when the user changes the zoom level or device settings.
+    * Disable the automatic font-size adjustment to ensure font-size remains as specified by the CSS.
+    * Helps to maintain the font-size on older mobile browsers and Safari to retain consistency with the design.
+    */
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    /* Create a smooth scroll behaviour, rather than a jumping effect to the new position */
+    scroll-behavior: smooth;
+  }
 
-body {
-  /* Flexbox is used to also help push the page footer to the bottom of the page */
-  display: flex;
-  /* Set the direction of the flex to be a column so it does not default to the row direction */
-  flex-direction: column;
-  /* Apply a minimum height to help push the page footer to the bottom of the page. This is a fallback for svh units */
-  min-height: 100vh;
-  /* Ensure the body will fill the visible part of the screen. Not currently supported in Firefox, added for Progressive Enhancement */
-  min-height: 100svh;
-  /* Prevent horizontal scrolling issues on mobile devices */
-  overflow-x: hidden;
-  /* Remove the margin from the body selector */
-  margin: 0;
-  /* Improve the readability of fonts in WebKit browsers to render the edges of the characters to look smooth on screen */
-  -webkit-font-smoothing: antialiased;
-  /* Applies the same font readability to Firefox browsers on macOS */
-  -moz-osx-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
+  body {
+    /* Flexbox is used to also help push the page footer to the bottom of the page */
+    display: flex;
+    /* Set the direction of the flex to be a column so it does not default to the row direction */
+    flex-direction: column;
+    /* Apply a minimum height to help push the page footer to the bottom of the page. This is a fallback for svh units */
+    min-height: 100vh;
+    /* Ensure the body will fill the visible part of the screen. Not currently supported in Firefox, added for Progressive Enhancement */
+    min-height: 100svh;
+    /* Prevent horizontal scrolling issues on mobile devices */
+    overflow-x: hidden;
+    /* Remove the margin from the body selector */
+    margin: 0;
+    /* Improve the readability of fonts in WebKit browsers to render the edges of the characters to look smooth on screen */
+    -webkit-font-smoothing: antialiased;
+    /* Applies the same font readability to Firefox browsers on macOS */
+    -moz-osx-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
 
-h1, 
-h2, 
-h3, 
-h4, 
-p, 
-figure, 
-blockquote, 
-dl, 
-dd {
-  /* Remove margin-bottom from the elements in the selector */
-  margin-block-end: 0;
-}
+  h1, 
+  h2, 
+  h3, 
+  h4, 
+  p, 
+  figure, 
+  blockquote, 
+  dl, 
+  dd {
+    /* Remove margin-bottom from the elements in the selector */
+    margin-block-end: 0;
+  }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-  /* Balance out the length of headings */
-  text-wrap: balance;
-}
+  h1, 
+  h2, 
+  h3, 
+  h4, 
+  h5, 
+  h6 {
+    /* Balance out the length of headings */
+    text-wrap: balance;
+  }
 
-main, 
-picture, 
-svg, 
-video {
-  /* Set the elements to be block-level elements by default */
-  display: block;
-}
+  main, 
+  picture, 
+  svg, 
+  video {
+    /* Set the elements to be block-level elements by default */
+    display: block;
+  }
 
-img, 
-picture, 
-svg, 
-video {
-  /* Restrict the element width to not exceed the parent container to keep aspect ratio but allow the element to scale-down */
-  max-width: 100%;
-}
+  img, 
+  picture, 
+  svg, 
+  video {
+    /* Restrict the element width to not exceed the parent container to keep aspect ratio but allow the element to scale-down */
+    max-width: 100%;
+  }
 
-img, 
-iframe, 
-object, 
-svg {
-  /* 
-  * Retain the aspect ratio of the element that is usually set with the HTML width and height attributes.
-  * Prevents the iFrame or object from becoming stretched or distorted. 
-  */
-  height: auto;
-  /* Remove any border from elements in legacy IE browsers when elements are used inside of links */
-  border: none;
-}
+  img, 
+  iframe, 
+  object, 
+  svg {
+    /* 
+    * Retain the aspect ratio of the element that is usually set with the HTML width and height attributes.
+    * Prevents the iFrame or object from becoming stretched or distorted. 
+    */
+    height: auto;
+    /* Remove any border from elements in legacy IE browsers when elements are used inside of links */
+    border: none;
+  }
 
-img {
-  /* Replace the default inline-block behavior to be full-width and to stack when needed */
-  vertical-align: middle;
-  /* Set the tooltip text style to make it easier to identify in text if the image does not load */
-  font-style: italic;
-  /* Handle loading low resolution images for lazy-loading */
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* Create margin around a floated image with content */
-  shape-margin: 1rem;
-} 
+  img {
+    /* Replace the default inline-block behavior to be full-width and to stack when needed */
+    vertical-align: middle;
+    /* Set the tooltip text style to make it easier to identify in text if the image does not load */
+    font-style: italic;
+    /* Handle loading low resolution images for lazy-loading */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Create margin around a floated image with content */
+    shape-margin: 1rem;
+  } 
 
-/* Link default state */
-a, 
-a:link {
-  /* Remove the default grey background on active links in IE browsers */
-  background-color: transparent;
-  /* Inherit the colour specified in the parent element for consistency until a colour is applied */
-  color: inherit;
-  /* Inherit the font-size from the parent element */
-  font-size: inherit;
-  /* Remove underline from all links by default */
-  text-decoration: none;
-}
+  /* Link default state */
+  a, 
+  a:link {
+    /* Remove the default grey background on active links in IE browsers */
+    background-color: transparent;
+    /* Inherit the colour specified in the parent element for consistency until a colour is applied */
+    color: inherit;
+    /* Inherit the font-size from the parent element */
+    font-size: inherit;
+    /* Remove underline from all links by default */
+    text-decoration: none;
+  }
 
-/* Link hover state */
-a:hover {
-  /* Display underline underneath a link on hover by default */
-  text-decoration: underline;
-}
+  /* Link hover state */
+  a:hover {
+    /* Display underline underneath a link on hover by default */
+    text-decoration: underline;
+  }
 
-button,
-[type="button"],
-[type="submit"],
-[type="reset"],
-[role="button"],
-input, 
-textarea, 
-optgroup, 
-select, 
-a {
-  /* Ensure that the font applied is inherited and also applies to the elements listed as selectors */
-  font: inherit;
-}
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"],
+  [role="button"],
+  input, 
+  textarea, 
+  optgroup, 
+  select, 
+  a {
+    /* Ensure that the font applied is inherited and also applies to the elements listed as selectors */
+    font: inherit;
+  }
 
-button,
-[type="button"],
-[type="submit"],
-[type="reset"],
-[role="button"] {
-  /*
-  * Allows the element to behave like inline elements, to flow with text, we can also set width, height and padding.
-  * Helps to ensure consistency across browsers and when links are styled as buttons.
-  */
-  display: inline-block;
-  /* Ensure the text within a button wraps correctly on small devices */
-  min-width: fit-content;
-  /* Cross-browser compatibility for WebKit browsers such as Safari and iOS */
-  -webkit-appearance: button;
-  /* Force the element to render as a standard button and override any platform-specific styles */
-  appearance: button;
-  text-align: center;
-  text-decoration: none;
-}
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"],
+  [role="button"] {
+    /*
+    * Allows the element to behave like inline elements, to flow with text, we can also set width, height and padding.
+    * Helps to ensure consistency across browsers and when links are styled as buttons.
+    */
+    display: inline-block;
+    /* Ensure the text within a button wraps correctly on small devices */
+    min-width: fit-content;
+    /* Cross-browser compatibility for WebKit browsers such as Safari and iOS */
+    -webkit-appearance: button;
+    /* Force the element to render as a standard button and override any platform-specific styles */
+    appearance: button;
+    text-align: center;
+    text-decoration: none;
+  }
 
-/* Apply styling to code snippets and similar elements */
-pre, 
-code, 
-kbd, 
-samp {
-  font-family: monospace;
-  /* Inherit the font-size from the parent element */
-  font-size: inherit;
-}
+  /* Apply styling to code snippets and similar elements */
+  pre, 
+  code, 
+  kbd, 
+  samp {
+    font-family: monospace;
+    /* Inherit the font-size from the parent element */
+    font-size: inherit;
+  }
 
-ul, 
-ol {
-  /* Create a clean unstyled starting point to allow customisation for lists */
-  list-style-type: none;
-}
+  ul, 
+  ol {
+    /* Create a clean unstyled starting point to allow customisation for lists */
+    list-style-type: none;
+  }
 
-footer {
-  /* Push the footer to the bottom of the page with the flex properties in the body element */
-  margin-top: auto;
-}
+  footer {
+    /* Push the footer to the bottom of the page with the flex properties in the body element */
+    margin-top: auto;
+  }
 
-/* Apply styling for React or Next.js applications */
-#root, 
-#__next {
-  /* 
-  * Ensures all content inside the app is rendered with its own stacking context.
-  * This controls how child elements are layered in terms of z-index and paint order.
-  * Prevents z-index conflicts or visual overlaps between elements inside of the isolate element specified.
-  */
-  isolation: isolate;
+  /* Apply styling for React or Next.js applications */
+  #root, 
+  #__next {
+    /* 
+    * Ensures all content inside the app is rendered with its own stacking context.
+    * This controls how child elements are layered in terms of z-index and paint order.
+    * Prevents z-index conflicts or visual overlaps between elements inside of the isolate element specified.
+    */
+    isolation: isolate;
+  }
 }
