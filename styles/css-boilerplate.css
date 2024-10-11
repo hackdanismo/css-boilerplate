@@ -1,11 +1,11 @@
 /* 
   * CSS Boilerplate
-  * v1.0.0
+  * v1.1.0
   *
   * License: GPL-3.0 license
   * Copyright: Hackdanismo (Dan Jackson) and any other contributors
   *
-  * Date: 2024-09-13
+  * Date: 2024-09-13 (TBC)
 */
 
 *, 
@@ -22,6 +22,15 @@
 }
 
 html {
+  /* Set the root font-size */
+  font-size: 16px;
+  /* The root font-size will use the rem unit with a px unit as a fallback if needed */
+  font-size: 1rem;
+  /* 
+  * Improve readability of text by providing spacing to reduce eye strain.
+  * Helps to improve accessibility making the text easier to scan especially on small screens and mobile devices.
+  */
+  line-height: 1.5;
   /*
   * Prevent font-size inflation when the user changes the zoom level or device settings.
   * Disable the automatic font-size adjustment to ensure font-size remains as specified by the CSS.
@@ -35,19 +44,10 @@ html {
 }
 
 body {
-  /* Set the root font-size */
-  font-size: 16px;
-  /* The root font-size will use the rem unit with a px unit as a fallback if needed */
-  font-size: 1rem;
   /* Flexbox is used to also help push the page footer to the bottom of the page */
   display: flex;
   /* Set the direction of the flex to be a column so it does not default to the row direction */
   flex-direction: column;
-  /* 
-  * Improve readability of text by providing spacing to reduce eye strain.
-  * Helps to improve accessibility making the text easier to scan especially on small screens and mobile devices.
-  */
-  line-height: 1.5;
   /* Apply a minimum height to help push the page footer to the bottom of the page. This is a fallback for svh units */
   min-height: 100vh;
   /* Ensure the body will fill the visible part of the screen. Not currently supported in Firefox, added for Progressive Enhancement */
