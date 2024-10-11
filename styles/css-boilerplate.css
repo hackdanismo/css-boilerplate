@@ -13,10 +13,6 @@
 *::after {
   /* Ensure all elements apply the correct box-sizing model */
   box-sizing: border-box;
-  /* Remove margin from all elements by default */
-  margin: 0;
-  /* Remove padding from all elements by default */
-  padding: 0;
   /* Inherit any font that has been set */
   font: inherit;
 }
@@ -34,7 +30,7 @@ html {
   /*
   * Prevent font-size inflation when the user changes the zoom level or device settings.
   * Disable the automatic font-size adjustment to ensure font-size remains as specified by the CSS.
-  * Helps to maintain the font-size on older mobile browsers and retain consistency with the design.
+  * Helps to maintain the font-size on older mobile browsers and Safari to retain consistency with the design.
   */
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
@@ -54,11 +50,26 @@ body {
   min-height: 100svh;
   /* Prevent horizontal scrolling issues on mobile devices */
   overflow-x: hidden;
+  /* Remove the margin from the body selector */
+  margin: 0;
   /* Improve the readability of fonts in WebKit browsers to render the edges of the characters to look smooth on screen */
   -webkit-font-smoothing: antialiased;
   /* Applies the same font readability to Firefox browsers on macOS */
   -moz-osx-font-smoothing: antialiased;
   font-smoothing: antialiased;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+p, 
+figure, 
+blockquote, 
+dl, 
+dd {
+  /* Remove margin-bottom from the elements in the selector */
+  margin-block-end: 0;
 }
 
 h1, 
