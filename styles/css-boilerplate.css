@@ -37,8 +37,18 @@
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
-    /* Create a smooth scroll behaviour, rather than a jumping effect to the new position */
-    scroll-behavior: smooth;
+  }
+
+  /* 
+  * Add motion-related properties inside of this @media query.
+  * Only apply animations, transitons and/or motion effects when the user has not requested reduced motion in the system settings.
+  * This is an accessibility feature for users who are sensitive to motion.
+  */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      /* Create a smooth scroll behaviour, rather than a jumping effect to the new position */
+      scroll-behavior: smooth;
+    }
   }
 
   body {
