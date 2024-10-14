@@ -1,11 +1,11 @@
 /* 
   * CSS Boilerplate
-  * v1.1.0
+  * v1.1.1
   *
   * License: GPL-3.0 license
   * Copyright: Hackdanismo (Dan Jackson) and any other contributors
   *
-  * Date: 2024-10-11
+  * Date: 2024-10-14
 */
 
 /* Namespace the code using @layer supported by all modern browsers, except Internet Explorer (IE) */
@@ -214,12 +214,6 @@
     font-family: monospace;
     /* Inherit the font-size from the parent element */
     font-size: inherit;
-  }
-
-  ul, 
-  ol {
-    /* Create a clean unstyled starting point to allow customisation for lists */
-    list-style-type: none;
   }
 
   footer {
