@@ -1,11 +1,11 @@
 /* 
   * CSS Boilerplate
-  * v1.1.1
+  * v1.1.2
   *
   * License: GPL-3.0 license
   * Copyright: Hackdanismo (Dan Jackson) and any other contributors
   *
-  * Date: 2024-10-14
+  * Date: 2024-10-18
 */
 
 /* Namespace the code using @layer supported by all modern browsers, except Internet Explorer (IE) */
@@ -162,14 +162,6 @@
     color: inherit;
     /* Inherit the font-size from the parent element */
     font-size: inherit;
-    /* Remove underline from all links by default */
-    text-decoration: none;
-  }
-
-  /* Link hover state */
-  a:hover {
-    /* Display underline underneath a link on hover by default */
-    text-decoration: underline;
   }
 
   button,
